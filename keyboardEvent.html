@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="keyevent, keypress, keyup, keydown">
+    <meta name="description" content="KeyboardEvent objects describe a user interaction with the keyboard; each event describes a single interaction between the user and a key (or combination of a key with modifier keys) on the keyboard. The event type (keydown, keypress, or keyup) identifies what kind of keyboard activity occurred">
+    <meta name="author" content="Bipronath Saha">
+    <title>Keyboard Event</title>
+
+    <style>
+        body{
+            background: #fef4fef9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #keyboard{
+            background-color: #343536;
+            margin: 0;
+            padding: 150px;
+            text-align: center;
+        }
+        #keyboard h1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #f1f1f1;
+            line-height: 25px;
+        }
+        #keyboard input{
+            padding: 15px 15px;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="keyboard">
+            <h1>keyboard Event</h1>
+            <input type="text" placeholder="Text" id="keyEvent">
+        </div>
+    </div>
+    
+
+    <!--JS-->
+    <script src="/keyboardEvent.js"></script>
+</body>
+</html>
