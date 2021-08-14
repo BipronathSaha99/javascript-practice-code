@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Redirection</title>
+    
+    <style>
+        h1{
+            font: 20px 2.5rem bold ;
+            color: #f00;
+            padding: 50px 0px 0px 0px;
+            text-align: center;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding:15px 10px;
+            margin: 0px 5px;
+            cursor: pointer;
+            background-color: cornflowerblue;
+            border: 1px solid cornflowerblue;
+            border-radius: 10px;
+            color: #f00;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!---Page Redirection-->
+    <h1>Page Redirection in JS</h1>
+    <div class="button">
+        <button class="btn" onclick="read()" >Read More</button>
+    </div>
+
+    <script>
+        //Page Redirection
+        function read(){
+            // window.location.href = 'https://www.w3schools.com/howto/howto_js_redirect_webpage.asp'
+            // window.location.assign("https://www.w3schools.com/howto/howto_js_redirect_webpage.asp")
+            // window.location.replace("https://www.w3schools.com/howto/howto_js_redirect_webpage.asp")
+              window.open("https://www.w3schools.com/howto/howto_js_redirect_webpage.asp", "_blank")
+        }
+    </script>
+</body>
+</html>
