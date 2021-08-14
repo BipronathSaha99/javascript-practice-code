@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learning</title>
+    
+    <style>
+        h1{
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px 20px;
+            color: #6d2222;
+        }
+        .btnOne {
+            padding: 15px 15px;
+            margin: 10px auto;
+            display: block;
+            background-color: #6d2222;
+            font-size: 18px;
+            color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btnTwo {
+            padding: 15px 15px;
+            margin: 10px auto;
+            display: block;
+            background-color: #1f1515;
+            font-size: 18px;
+            color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btnThree{
+            padding: 15px 15px;
+            margin: 10px auto;
+            display: block;
+            background-color: #1f1515;
+            font-size: 18px;
+            color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img{
+            max-width: 100%;
+            width: 350px;
+            height: 100%;
+        }
+        /*DOM CSS style */
+        .para-style{
+            font-size: 3.5rem;
+            font-weight: bold;
+            font-style: italic;
+            color: #f00;
+            text-align: center;
+        }
+        .addBtn{
+            padding: 15px 15px;
+            margin: 10px auto;
+            display: block;
+            background-color: #1f1515;
+            font-size: 18px;
+            color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .removeBtn{
+            padding: 15px 15px;
+            margin: 10px auto;
+            display: block;
+            background-color: #1f1515;
+            font-size: 18px;
+            color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+            </style>
+
+</head>
+<body>
+    <h1 id="heading1">Bipronath Saha</h1>
+    <h2 id = "para1" >Bootstrap 4</h2>
+    <p id="demo">Long</p>
+    <p id="demo1"></p>
+    <p class ="demoPara"></p>
+    <h2 class ="paraHead"></h2>
+
+    <!--new code for querySelector()-->
+    <a href="#">HOME</a>
+
+    <ul>
+        <li><a href="#">Tutorial</a></li>
+        <li><a href="#">Projects</a></li>
+    </ul>
+
+    <div class="my-div">
+        <a href="#">Follow Me</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!--More on DOM
+        Parent Child Siblings relationship in JS    
+    -->
+    <div id="div1">
+        <p id="p1">Lorem ipsum dolor sit amet.</p>
+        <p id="p2">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <ul>
+        <li>Project</li>
+        <li>Plan</li>
+        <li>Serve</li>
+    </ul>
+
+
+
+    <!---Event Handler-->
+
+    <button class="btnOne" onclick="btnOneTxt()"> Click Me</button>
+    <button class ="btnTwo" onclick="btnTwoTxt()">Read More</button>
+    <button class ="btnThree" onclick ="myPic()">Bipronath</button>
+    <p></p>
+    <img id ="pic" src="#" alt="">
+
+    <!--DOM CSS
+    Changing CSS Style 
+    -->
+    <p id="paragraph">Bangladesh is a riverine country</p>
+    <button class="addBtn" onclick="add()">add style</button>
+    
+    <button class="removeBtn" onclick="remove()">remove style</button>
+
+    <p id="p01"></p>
+
+
+
+
+
+    <!--JS files link-->
+    <!-- <script src="/app.js"></script> -->
+    <!-- <script src="/alert_prompt_confirm.js"></script> -->
+    <!-- <script src="if-else,else-if.js"></script> -->
+    <!-- <script src="/switch_statement.js"></script> -->
+    <!-- <script src="/loop.js"></script> -->
+    <!-- <script src="/function.js"></script> -->
+    <!-- <script src="/area_shapes.js"></script> -->
+    <!-- <script src="/array.js"></script> -->
+    <!-- <script src="/type_converstion.js"></script> -->
+    <!-- <script src="/dom.js"></script> -->
+    <!-- <script src="/querySelector.js"></script> -->
+    <!-- <script src="/event(onclick).js"></script> -->
+    <!-- <script src="/domCSS.js"></script> -->
+    <!-- <script src="/errorHandle.js"></script> -->
+</body>
+</html>
