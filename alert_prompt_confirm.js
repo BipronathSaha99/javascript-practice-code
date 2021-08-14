@@ -18,3 +18,4 @@ if (r == true){
 else{
     txt = "you aren't perfect";
     console.log(txt);
+    }
