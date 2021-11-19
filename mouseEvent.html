@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="JS DOM, onmouseover, mouse_event,onmouseout">
+    <meta name="author" content="Bipronath Saha">
+    <title>Mouse Event</title>
+    <style>
+        img{
+            max-width: 500px;
+            min-height: 250px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="/assets/image1.jpeg" alt="image1">
+    <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+    <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+    
+    <p id = "paraOne" onmouseup="takemouse()" onmousedown="takemousedown()">Click Me</p>
+    <p id="paraTwo" onmouseenter="mouseSeent()" onmouseleave="mouseLeave()">Read ME</p>
+    <script src="/mouseEvent.js"></script>
+</body>
+</html>
