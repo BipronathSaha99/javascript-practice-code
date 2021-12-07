@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Event</title>
+
+    <style>
+        body{
+            background-color: #303030;
+            color: #f9f9f9;
+            text-align: center;
+        }
+        .audio{
+            text-align: center;
+            margin: 10px;
+        }
+        #videoDiv{
+            text-align: center;
+        }
+        video{
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Event </h1>
+    <!--canplay,play,ended,progress,volumechange,wait-->
+    <div class="audio">
+        <audio controls loop>
+            <source src="/media/song1.mp3" type="audio/mp3">
+        </audio>
+    </div>
+  
+    <div id="videoDiv">
+        <video  controls loop>
+            <source src="/media/How to Install Python on Windows and run in cmd (solved).mp4" type="video/mp4">
+        </video>
+    
+    </div>
+   
+    <script src="/mediaEvent.js"></script>
+</body>
+</html>
