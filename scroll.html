@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Event in JS</title>
+
+    <style>
+        body{
+            height: 5000px
+        }
+        #scText{
+            border: 1px solid #393939;
+            width: 250px;
+            height: 150px;
+            overflow: scroll;
+            margin:auto;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .test{
+            background-color: #DDEE22;
+        }
+        .testTwo{
+            background-color: #556b2f ;
+        }
+        #demonTwo{
+            position: fixed;
+        }
+        img{
+            max-width: 300px;
+            height: 200px;
+            display: block;
+            margin: auto;
+        }
+        button{
+            display: block;
+            margin: auto;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll Event in JavaScript</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nobis dolor inventore veniam magni nostrum beatae assumenda debitis nisi harum.</p>
+    
+    <div id="scText">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae assumenda et modi libero laudantium sit. Dolorem aliquid modi ratione voluptatem.<br><br>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint delectus consequatur necessitatibus sapiente similique qui eaque, quas, illum, enim inventore distinctio dignissimos?
+    </div>
+    <p id="demo"></p>
+    
+    <p id="demonTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt, tempora nihil quaerat debitis velit fugiat impedit placeat tenetur nisi, sapiente repellendus magni. Molestiae, numquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo similique consequuntur quidem perspiciatis ullam qui voluptatum sint. Explicabo, ducimus sed ab praesentium magnam distinctio earum magni libero ipsum ea? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur temporibus perspiciatis iste deleniti harum veniam debitis commodi dolorem odio, eveniet quod, laboriosam velit? Cupiditate ratione asperiores dicta dolorem est commodi numquam itaque beatae molestiae.</p>
+
+    <!--scrollTo-->
+    <div>
+        <button type="button" onclick="scrollWin()">click me</button>
+        <img src="/assets/image1.jpeg" alt="img">
+    </div>
+    <script src="/scroll.js"></script>
+</body>
+</html>
