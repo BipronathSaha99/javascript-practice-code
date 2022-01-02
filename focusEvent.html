@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Event</title>
+    <style>
+        input[type="text"]{
+            display: block;
+            margin: 0 auto;
+            margin-top:30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Focus Event</h2>
+    <input type="text">
+
+
+    <script>
+        let input = document.querySelector("input");
+        /*
+        //blur
+        input.addEventListener('blur', (e)=>{
+                // console.log("Blur is working")
+                input.style.padding = '1rem';
+                input.style.backgroundColor = "orange";
+                input.style.color = "red";
+                input.style.borderRadius = '5px';
+                console.log(e.target.value.toUpperCase());
+            }, true)
+
+        //focus
+        input.addEventListener('focus', ()=>{
+                // console.log("Focus is perfect")
+            input.style.backgroundColor = '#ababab';
+            input.style.padding = '2rem';
+            input.style.borderRadius = '10px'
+            input.style.color = "black";
+        },true)
+        */
+
+
+        
+        //focusin 
+        input.addEventListener('focusin', ()=>{
+            // console.log("Focusin is ok")
+            input.style.backgroundColor = "orange";
+            input.style.color = "red";
+            input.style.padding = "2rem";
+            input.style.borderRadius = "0.5rem";
+        }, true)
+
+        //focusout
+        input.addEventListener('focusout', (e)=>{
+            // console.log('focus out')
+            input.style.backgroundColor = "red";
+            input.style.color = "white";
+            input.style.padding = "0.4rem";
+            input.style.fontSize = "1.5rem";
+            console.log(e.target.value.toUpperCase())
+        }, true)
+        
+    </script>
+</body>
+</html>
