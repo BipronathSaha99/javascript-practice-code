@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop - JavaScript Learning</title>
+    <!-- All the css  -->
+    <style>
+        body{
+            background-color: chocolate;
+        }
+        .box{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background: white;
+            border: 1px solid #333;
+        }
+        .imageBox{
+            background: url('/assets/person.jpg');
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .boxHold{
+            border: 1px solid red;
+        }
+        .hide{
+            display: none;
+        }
+        .dashed{
+            background: grey;
+            border-style: dashed;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imageBox" draggable="true"></div>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+<!-- All The JS code  -->
+<script>
+    //fetch the elements
+    const imageBox = document.querySelector(".imageBox");
+    const boxes = document.getElementsByClassName("box");
+
+    //Handle dragstart event on the imageBox class
+    imageBox.addEventListener('dragstart', (e)=>{
+        console.log("Dragstart has been triggerd");
+        e.target.className += " boxHold";
+        setTimeout(()=>{
+            e.target.className = " hide";
+
+        },0);
+    })
+    //Handle dragend event on the imageBox class 
+    imageBox.addEventListener('dragend', (e)=>{
+        console.log("Dragend has been triggerd");
+    })
+
+    //Now to dragover and drop on the other boxes 
+    for(box of boxes){
+        box.addEventListener('dragover', (e)=>{
+            e.preventDefault();
+            console.log("Dragover has been triggerd");
+        })
+        box.addEventListener('dragenter', (e)=>{
+            console.log("Dragenter has been triggerd");
+            e.target.className += " dashed"
+        })
+        box.addEventListener('dragleave', (e)=>{
+            console.log("Dragleave has been triggerd");
+            e.target.className += " box";
+        })
+        box.addEventListener('drop', (e)=>{
+            console.log("Drop has been triggerd");
+            e.target.append(imageBox);
+        })
+    }
+</script>
+</body>
+</html>
